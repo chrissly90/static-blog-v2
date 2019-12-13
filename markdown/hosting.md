@@ -28,7 +28,7 @@
   </tr>
   <tr>
     <td class="tg-45q3">Jabber/XMPP</td>
-    <td class="tg-cakw">https://xmpp.tinfoil-hat.net</td>
+    <td class="tg-cakw">https://jabber.nchristian.net</td>
     <td class="tg-cakw"><a href="https://ejabberd.im/">ejabebrd</a></td>
   </tr>
   <tr>
