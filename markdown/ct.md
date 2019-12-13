@@ -1,19 +1,11 @@
----
-title: "Conspiracy Theories"
-date: 2019-08-21T00:42:22+02:00
-draft: false
-image: "/uploads/truth.jpeg"
-comments: true
----
-
 ## Summary
 
 - [How-the-Media-Controls-you](how-the-media-controls-you.html)
 - [The Venus Project and Zeitgeist the Movie](zeitgeist.html)
-- [How to Spot Clowns](how-to-spot-clowns)
+- [How to Spot Clowns](how-to-spot-clowns.html)
 - [Qanon](qanon.html)
-- [Full Featured 'Conspiracy' Documentaries](full-featured-conspiracy-documentaries)
-- [Hollywood knew about 9-11](hollywood-knew)
+- [Full Featured 'Conspiracy' Documentaries](full-featured-conspiracy-documentaries.html)
+- [Hollywood knew about 9-11](hollywood-knew.md)
 
 ## Truther / Conspiracy RSS Feeds
 
