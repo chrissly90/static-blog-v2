@@ -33,7 +33,7 @@
   </tr>
   <tr>
     <td class="tg-h9ma">Git</td>
-    <td class="tg-uyrh"><ahttps://git.tinfoil-hat.net/>https://git.tinfoil-hat.net</a></td>
+    <td class="tg-uyrh"><a href=https://git.tinfoil-hat.net/>https://git.tinfoil-hat.net</a></td>
     <td class="tg-uyrh"><a href="https://gogs.io/">Gogs</a></td>
   </tr>
   <tr>
