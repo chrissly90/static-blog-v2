@@ -1,6 +1,6 @@
 # summary
 
-- [The Founder of Fossil Forum - on Github](fossil-forum-founder-on-githubi.html)
+- [The Founder of Fossil Forum - on Github](fossil-forum-founder-on-Github.html)
 - [Full-Stack-Developer-vs-Full-Stack-Human](full-stack-developer-vs-full-stack-human.html)
 - [Some Coding Spotity Playlist](coding-music.html)
 - [Tinfoil-Chat](/tinfoil-chat.html)
