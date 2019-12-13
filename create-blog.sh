@@ -1,3 +1,7 @@
 #!/usr/local/bin/bash
+cd bin
 
-/bin/./create-structure.sh
+./gen-post-html.sh
+./gen-site-index.sh
+
+cd ..
