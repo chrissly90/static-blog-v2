@@ -13,12 +13,12 @@
   </tr>
   <tr>
     <td class="tg-45q3">Wiki<br></td>
-    <td class="tg-cakw">https://wiki.tinfoil-hat.net</td>
+    <td class="tg-cakw"><a href=https://wiki.tinfoil-hat.net>https://wiki.tinfoil-hat.net</a></td>
     <td class="tg-cakw"><a href="https://www.bookstackapp.com/">Bookstack</a></td>
   </tr>
   <tr>
     <td class="tg-55q3">RSS Link Aggregator<br></td>
-    <td class="tg-zakw">https://rss.tinfoil-hat.net</td>
+    <td class="tg-zakw"><a href=https://rss.tinfoil-hat.net>https://rss.tinfoil-hat.net</a></td>
     <td class="tg-zakw"><a href="https://freshrss.github.io/FreshRSS/">FreshRSS</a></td>
   </tr>
   <tr>
@@ -33,27 +33,27 @@
   </tr>
   <tr>
     <td class="tg-h9ma">Git</td>
-    <td class="tg-uyrh">https://git.tinfoil-hat.net/</td>
+    <td class="tg-uyrh"><ahttps://git.tinfoil-hat.net/>https://git.tinfoil-hat.net</a></td>
     <td class="tg-uyrh"><a href="https://gogs.io/">Gogs</a></td>
   </tr>
   <tr>
     <td class="tg-45q3">Personal Blog</td>
-    <td class="tg-cakw">https://blog.tinfoil-hat.net</td>
+    <td class="tg-cakw">Discontinued</td>
     <td class="tg-cakw"><a href="https://gohugo.io/">Hugo</a></td>
   </tr>
   <tr>
-    <td class="tg-h9ma">Legacy Personal Blog</td>
-    <td class="tg-uyrh">Discontinued</td>
-    <td class="tg-uyrh">Self coded HTML/CSS</td>
+    <td class="tg-h9ma">Static Personal Blog</td>
+    <td class="tg-uyrh"><a href=https://tinfoil-hat.net/>https://tinfoil-hat.net</a></td>
+    <td class="tg-uyrh">Self coded HTML/CSS /Shellscript</td>
   </tr>
   <tr>
     <td class="tg-45q3">Tempoary File Upload</td>
-    <td class="tg-cakw">https://drop.tinfoil-hat.net/#/</td>
+    <td class="tg-cakw"><a href=https://drop.tinfoil-hat.net/#/>https://drop.tinfoil-hat.net/#/</a></td>
     <td class="tg-cakw"><a href="https://github.com/root-gg/plik">Plik</a></td>
   </tr>
   <tr>
     <td class="tg-h9ma">Pastebin</td>
-    <td class="tg-uyrh">https://bin.tinfoil-hat.net/</td>
+    <td class="tg-uyrh"><a href=https://bin.tinfoil-hat.net/>https://bin.tinfoil-hat.net/</a></td>
     <td class="tg-uyrh"><a href="https://privatebin.info/">Privatebin</a></td>
   </tr>
   <tr>
@@ -63,17 +63,17 @@
   </tr>
   <tr>
     <td class="tg-h9ma">Linuxjournal.com siterip</td>
-    <td class="tg-uyrh">https://linuxjournal.rip</td>
+    <td class="tg-uyrh"><a href=https://linuxjournal.rip>https://linuxjournal.rip</a></td>
     <td class="tg-uyrh">wget / apache2 / nginx</td>
   </tr>
   <tr>
     <td class="tg-h9ma">Pebble archive/siterips</td>
-    <td class="tg-uyrh">https://pebble.rip</td>
+    <td class="tg-uyrh"><a href=https://pebble.rip>https://pebble.rip</a></td>
     <td class="tg-uyrh">wget / apache2 / nginx</td>
   </tr>
   <tr>
     <td class="tg-h9ma">WoW Classic Guild Homepage</td>
-    <td class="tg-uyrh">https://Brauerei-Goldhain.wtf</td>
+    <td class="tg-uyrh"><a href=https://Brauerei-Goldhain.wtf>https://Brauerei-Goldhain.wtf</a></td>
     <td class="tg-uyrh">EQDKP Plus</td>
   </tr>
 </table>
