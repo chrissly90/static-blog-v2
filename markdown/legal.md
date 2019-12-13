@@ -1,0 +1,273 @@
+## Imprint & Privacy Policy:
+
+This Site falls under German / European Law Imprint  
+Data according toä&sclig; § 5 TMG  
+
+Christian Nitschke  
+Steubenstr. 45  
+69121 Heidelberg  
+Contact  
+
+E-mail: mail(at)tinfoil-hat.net  
+Liability for content  
+
+As a service provider, we are responsible for our own content on these pages in accordance with the general laws pursuant to § 7 para.1 TMG. According to §§ 8 to 10 TMG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to search for circumstances that indicate illegal activity.
+
+Obligations to remove or block the use of information according to the general laws remain unaffected. A liability in this respect is only possible from the time of knowledge of a concrete violation of the law. As soon as we become aware of such legal infringements, we will remove these contents immediately.
+Liability for links
+
+Our offer contains links to external websites of third parties over whose contents we have no influence. Therefore, we cannot accept any liability for these external contents. The respective provider or operator of the pages is always responsible for the contents of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognisable at the time of linking.
+
+A permanent control of the contents of the linked pages is, however, not reasonable without concrete evidence of an infringement. If we become aware of any legal infringements, we will remove such links immediately.
+Copyright
+
+The content and works on these pages created by the site operators are subject to German copyright law. The reproduction, processing, distribution and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this website are only permitted for private, non-commercial use. If the contents of this website have not been created by the operator, the copyrights of third parties are respected. In particular, contents of third parties are marked as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. As soon as we become aware of any legal infringements, we will remove such content immediately.
+
+Source: https://www.e-recht24.de
+
+Source: https://www.deepl.com/translator
+Data protection declaration
+
+### 1. data protection at a glance
+General notices
+
+The following notices provide a simple overview of what happens to your personal information when you visit this website. Personal information is any information that personally identifies you. You can find detailed information on the subject of data protection in our data protection declaration listed under this text.
+Data collection on this website
+
+Who is responsible for data collection on this website?
+
+Data processing on this website is carried out by the website operator. You can find their contact data in the imprint of this website.
+
+How do we collect your data?
+
+Your data is collected by informing us about it. This may be data that you enter in a contact form, for example.
+
+Other data is automatically collected by our IT systems when you visit the website. These are mainly technical data (e.g. Internet browser, operating system or time of the page call). This data is collected automatically as soon as you enter this website.
+
+Wherefor we use your data?
+
+Some of the data is collected to ensure that the website is error-free. Other data may be used to analyze your user behavior.
+
+What rights do you have with regard to your data?
+
+You have the right at any time and free of charge to obtain information about the origin, recipient and purpose of your stored personal data. You also have the right to request the correction or cancellation of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of data protection. In addition, you have the right to lodge a complaint with the competent supervisory authority.
+
+In addition, you have the right, under certain circumstances, to demand that the processing of your personal data be restricted. For details, please refer to the data protection statement under “Right to limitation of processing“.
+.
+Analysis tools and third-party tools
+
+When you visit this website, your surfing behaviour can be statistically evaluated. This is done primarily with cookies and so-called analysis programs. The analysis of your surfing behaviour is usually anonymous; the surfing behaviour cannot be traced back to you.
+
+You can object to this analysis or prevent it by not using certain tools. Detailed information about these tools and about your objections can be found in the following privacy statement.
+### 2. hosting
+External Hosting
+
+This website is hosted by an external service provider (Hoster). Personal data collected on this website is stored on the host's servers. This may include IP addresses, contact requests, meta and communication data, contract data, contact data, names, website accesses and other data generated via a website. The host is used for the purpose of fulfilling the contract with our potential and existing customers (Art. 6 para. 1 lit. b DSGVO) and in the interest of a secure, fast and efficient provision of our online offer by a professional provider (Art. 6 para. 1 lit. f DSGVO).
+
+Our hoster will only process your data to the extent that this is necessary to fulfil its performance obligations and to follow our instructions with regard to this data.
+### 3. general notes and mandatory information
+Privacy
+
+The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy statement.
+
+When you use this website, various personal data will be collected. Personal data is data with which you can be personally identified. This privacy statement explains what data we collect and how we use it. It also explains how and for what purpose this is done.
+
+We would like to point out that data transmission on the Internet (e.g. when communicating by e-mail) may have security gaps. A complete protection of the data against access by third parties is not possible.
+Information about the responsible party
+
+The responsible party for data processing on this website is:
+
+Christian Nitschke
+Steubenstr. 45
+69121 Heidelberg
+Germany
+
+Telephone: [Telephone number of the responsible office]
+E-mail: privat(at)nchristian.net
+
+Responsible body is the natural or legal person who alone or jointly with others üdecides on the purposes and means of processing personal data (e.g. names, e-mail addresses, etc.).
+Withdrawal of your consent to data processing
+
+Many data processing operations are only possible with your express consent. You can revoke your consent at any time. For this purpose, an informal e-mail notification to us is sufficient. The legality of the data processing carried out until the revocation remains unaffected by the revocation.
+External Hosting
+
+This website is hosted by an external service provider (Hoster). Personal data collected on this website is stored on the host's servers. This may include IP addresses, contact requests, meta and communication data, contract data, contact data, names, website accesses and other data generated via a website. The host is used for the purpose of fulfilling the contract with our potential and existing customers (Art. 6 para. 1 lit. b DSGVO) and in the interest of a secure, fast and efficient provision of our online offer by a professional provider (Art. 6 para. 1 lit. f DSGVO).
+
+Our hoster will only process your data to the extent that this is necessary to fulfil its performance obligations and to follow our instructions with regard to this data.
+### 3. general notes and mandatory information
+Privacy
+
+The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy statement.
+
+When you use this website, various personal data will be collected. Personal data is data with which you can be personally identified. This privacy statement explains what data we collect and how we use it. It also explains how and for what purpose this is done.
+
+We would like to point out that data transmission on the Internet (e.g. when communicating by e-mail) may have security gaps. A complete protection of the data against access by third parties is not possible.
+Information about the responsible party
+
+The responsible party for data processing on this website is:
+
+Christian Nitschke
+Steubenstr. 45
+69121 Heidelberg
+Germany
+
+Responsible body is the natural or legal person who alone or jointly with others üdecides on the purposes and means of processing personal data (e.g. names, e-mail addresses, etc.).
+Withdrawal of your consent to data processing
+
+Many data processing operations are only possible with your express consent. You can revoke your consent at any time. For this purpose, an informal e-mail notification to us is sufficient. The legality of the data processing carried out until the revocation remains unaffected by the revocation.
+Right of objection against data collection in special cases and against direct advertising (Art. 21 DSGVO)
+
+WITH THE PROCESSING OF DATA BASED ON ART. 6 ABS. 1 LIT. E OR F DSGVO, YOU HAVE AT ALL TIMES THE RIGHTS TO REFERRED TO APPLY THE PROCESSING OF YOUR PERSONAL DATA AGAINST THEIR SPECIFIC SITUATION; THIS IS ALSO APPLICABLE FOR THIS PROVISIONS. THE PARTICULAR LEGAL BASIS ON WHICH A PROCESSING IS BASED, YOU RECOGNISE THIS PRIVACY. IF you insert a counterclaim, we will not process any more of your personally related data involved unless we are able to use stringent protective measures;R PROVIDING THE PROCESSING THAT PROVIDES YOUR INTERESTS, RIGHTS AND FREEDOMS &UUMl;CONSIDERING OR PROCESSING THE PROCESSING THAT IS APPLICABLE, EXPRESSING OR DEFENDING RIGHTS (CONTRARY BY ART. 21 ABS. 1 DSGVO).
+
+YOUR PERSON-RELATED DATA WILL BE PROCESSED TO PROVIDE DIRECT ADVERTISEMENT, THAT YOU HAVE THE RIGHT TO PROCESS ANY PERSON-RELATEMENT DATA FOR THE PURPOSE OF SUCH ADVERTISEMENT; this also applies to the profiling as long as it is connected to such direct advertising. IF YOU CONTRACT, YOUR PERSONAL SPECIFIC DATA SHALL NOT CONSEQUENTLY BE USED ANY Longer FOR THE PURPOSE OF DIRECT ADVERTISEMENT (CONTRACTION UNDER ART. 21 ABS. 2 DSGVO).
+Right of appeal to the competent supervisory authority
+
+In the event of an infringement of the DSGVO, the persons concerned shall have the right to appeal to a supervisory authority, in particular in the Member State of their habitual residence, place of work or place of suspected infringement. The right of appeal shall be without prejudice to any other administrative or judicial remedies.
+Withdrawal of your consent to data processing
+
+Many data processing operations are only possible with your express consent. You can revoke your consent at any time. For this purpose, an informal e-mail notification to us is sufficient. The legality of the data processing carried out until the revocation remains unaffected by the revocation.
+Right of objection against data collection in special cases and against direct advertising (Art. 21 DSGVO)
+
+WITH THE PROCESSING OF DATA BASED ON ART. 6 ABS. 1 LIT. E OR F DSGVO, YOU HAVE AT ALL TIMES THE RIGHTS TO REFERRED TO APPLY THE PROCESSING OF YOUR PERSONAL DATA AGAINST THEIR SPECIFIC SITUATION; THIS IS ALSO APPLICABLE FOR THIS PROVISIONS. THE PARTICULAR LEGAL BASIS ON WHICH A PROCESSING IS BASED, YOU RECOGNISE THIS PRIVACY. IF you insert a counterclaim, we will not process any more of your personally related data involved unless we are able to use stringent protective measures;R PROVIDING THE PROCESSING THAT PROVIDES YOUR INTERESTS, RIGHTS AND FREEDOMS &UUMl;CONSIDERING OR PROCESSING THE PROCESSING THAT IS APPLICABLE, EXPRESSING OR DEFENDING RIGHTS (CONTRARY BY ART. 21 ABS. 1 DSGVO).
+
+YOUR PERSON-RELATED DATA WILL BE PROCESSED TO PROVIDE DIRECT ADVERTISEMENT, THAT YOU HAVE THE RIGHT TO PROCESS ANY PERSON-RELATEMENT DATA FOR THE PURPOSE OF SUCH ADVERTISEMENT; this also applies to the profiling as long as it is connected to such direct advertising. IF YOU CONTRACT, YOUR PERSONAL SPECIFIC DATA SHALL NOT CONSEQUENTLY BE USED ANY Longer FOR THE PURPOSE OF DIRECT ADVERTISEMENT (CONTRACTION UNDER ART. 21 ABS. 2 DSGVO).
+Right of appeal to the competent supervisory authority
+
+In the event of an infringement of the DSGVO, the persons concerned shall have the right to appeal to a supervisory authority, in particular in the Member State of their habitual residence, place of work or place of suspected infringement. The right of appeal shall be without prejudice to any other administrative or judicial remedies.
+right to data transferability
+
+You have the right to have data which we process automatically on the basis of your consent or in fulfilment of a contract transferred to you or to a third party in a common, machine-readable format. If you request the direct transfer of the data to another responsible person, this will only be done as far as it is technically feasible.
+SSL or TLS encryption
+
+This site uses SSL or TLS encryption for security reasons and to protect the transmission of confidential content, such as orders or requests you send to us as the site operator. You can recognize an encrypted connection by the fact that the address line of the browser changes from “http://“ to “https://“ and the lock symbol in your browser line.
+
+If SSL or TLS encryption is activated, the data that you transmit to us cannot be read by third parties.
+Information, rectification and correction
+
+You have the right, within the framework of the applicable legal provisions, at any time to free information about your stored personal data, their origin and recipient and the purpose of the data processing and, if applicable, a right to rectification or correction of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data. R PROVIDING THE PROCESSING THAT PROVIDES YOUR INTERESTS, RIGHTS AND FREEDOMS &UUMl;CONSIDERING OR PROCESSING THE PROCESSING THAT IS APPLICABLE, EXPRESSING OR DEFENDING RIGHTS (CONTRARY BY ART. 21 ABS. 1 DSGVO).
+
+YOUR PERSON-RELATED DATA WILL BE PROCESSED TO PROVIDE DIRECT ADVERTISEMENT, THAT YOU HAVE THE RIGHT TO PROCESS ANY PERSON-RELATEMENT DATA FOR THE PURPOSE OF SUCH ADVERTISEMENT; this also applies to the profiling as long as it is connected to such direct advertising. IF YOU CONTRACT, YOUR PERSONAL SPECIFIC DATA SHALL NOT CONSEQUENTLY BE USED ANY Longer FOR THE PURPOSE OF DIRECT ADVERTISEMENT (CONTRACTION UNDER ART. 21 ABS. 2 DSGVO).
+Right of appeal to the competent supervisory authority
+
+In the event of an infringement of the DSGVO, the persons concerned shall have the right to appeal to a supervisory authority, in particular in the Member State of their habitual residence, place of work or place of suspected infringement. The right of appeal shall be without prejudice to any other administrative or judicial remedies.
+right to data transferability
+
+You have the right to have data which we process automatically on the basis of your consent or in fulfilment of a contract transferred to you or to a third party in a common, machine-readable format. If you request the direct transfer of the data to another responsible person, this will only be done as far as it is technically feasible.
+SSL or TLS encryption
+
+This site uses SSL or TLS encryption for security reasons and to protect the transmission of confidential content, such as orders or requests you send to us as the site operator. You can recognize an encrypted connection by the fact that the address line of the browser changes from “http://“ to “https://“ and the lock symbol in your browser line.
+
+If SSL or TLS encryption is activated, the data that you transmit to us cannot be read by third parties.
+Information, rectification and correction
+
+You have the right, within the framework of the applicable legal provisions, at any time to free information about your stored personal data, their origin and recipient and the purpose of the data processing and, if applicable, a right to rectification or correction of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.
+Right of limitation of processing
+
+You have the right to request limitation of processing of your personal data. For this you can contact us at any time under the address indicated in the imprint. The right to limit the processing exists in the following cases:
+
+    If you dispute the accuracy of your personal data stored with us, we usually need time to verify this. For the duration of the review, you have the right to request that the processing of your personal data be restricted. If the processing of your personal data has taken place unlawfully, you may request that the processing of your data be restricted instead of being restricted.
+    If we no longer need your personal data, but you need it to exercise, defend or enforce your rights, you have the right to request that the processing of your personal data be restricted instead of being suspended.
+    If you have filed an objection pursuant to Art. 21 Para. 1 DSGVO, a deviation must be made between your and our interests. As long as it is not yet clear whose interests predominate, you have the right to demand that the processing of your personal data be restricted.
+
+If you have restricted the processing of your personal data, such data may not be – stored except with your consent or for the purpose of asserting, processing or otherwise disclosing such data;The data may be processed only with your consent or for the purpose of asserting, evaluating or defending legal rights or for the protection of the rights of another natural or legal person or for reasons of an
+### 4. data collection on this website
+Cookies
+
+The Internet pages partly use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer and saved by your browser.
+
+Most of the cookies we use are so-called “session cookies“. They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser the next time you visit our site.
+
+You can set your browser to notify you when cookies are set and to allow cookies only in individual cases, to allow or deny the acceptance of cookies for specific cases, and to enable automatic deletion of cookies when you close your browser. If cookies are deactivated, the functionality of this website may be restricted.
+
+Cookies which are required to carry out the electronic communication process or to provide certain functions you have requested (e.g. shopping basket function) are stored on the basis of Art. 6 para. 1 lit. f DSGVO. The website operator has a justified interest in the storage of cookies for the technically error-free and optimised provision of its services. If a corresponding consent has been requested (e.g. a consent to the storage of cookies), the processing is exclusively based on Art. 6 para. 1 lit. a DSGVO; the consent can be revoked at any time.
+
+If other cookies (e.g. cookies for the analysis of your surfing behaviour) are stored, they are treated separately in this privacy statement.
+Server log files
+
+The provider of these pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:
+
+    Browser type and browser version
+    Operating system used
+    Referrer URL
+    Host name of the accessing computer
+    Time of server request
+    IP address
+
+A merging of this data with other data sources is not performed.
+
+The collection of this data is based on Art. 6 para. 1 lit. f DSGVO. The website operator has a justified interest in the technically error-free presentation and optimisation of his website – for this purpose, the server log files must be recorded.
+Contact form
+
+If you send us enquiries via contact form, your data from the enquiry form including the contact data you entered there will be stored by us for the purpose of processing the enquiry and in the event of follow-up questions. We do not pass on this data without your consent.
+
+The processing of this data takes place on the basis of Art. 6 Para. 1 lit. b DSGVO, insofar as your enquiry relates to the fulfilment of a contract or is necessary for the execution of pre-contractual measures. In all other cases, processing is based on our legitimate interest in the effective processing of enquiries addressed to us (Art. 6 Para. 1 lit. f DSGVO) or on your consent (Art. 6 Para. 1 lit. a DSGVO) if this has been requested.
+
+The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to its storage or remove the purpose for which it was stored (e.g. after your request has been processed). Mandatory legal provisions – in particular storage periods – remain unaffected.
+Request by e-mail, telephone or fax
+
+If you contact us by e-mail, telephone or fax, your request including all personal data (name, request) will be stored and processed by us for the purpose of processing your request. We do not pass on this data without your consent.
+
+The processing of this data takes place on the basis of Art. 6 Para. 1 lit. b DSGVO, insofar as your enquiry relates to the fulfilment of a contract or is necessary for the execution of pre-contractual measures. In all other cases, the processing is based on your consent (Art. 6 para. 1 lit. a DSGVO) and/or on our legitimate interests (Art. 6 para. 1 lit. f DSGVO), as we have a legitimate interest in the effective processing of the enquiries addressed to us.
+
+The data you send us via contact requests will remain with us until you request us to delete them, revoke your consent to their storage or delete the purpose for which they were stored (e.g. after your request has been processed). Mandatory legal provisions – in particular legal retention periods – remain unaffected.
+Comment function on this website
+
+Füfor the comment function on this page, in addition to your comment, information about the time the comment was created, your e-mail address and, if you do not post anonymously, your chosen username will be saved.
+
+Subscribe to comments
+
+As a user of the site you can subscribe to comments after logging in. You will receive a confirmation email to verify that you are the owner of the email address you provided. You can unsubscribe from this function at any time via a link in the info mails. In this case, the data entered when subscribing to comments will be deleted; however, if you have transmitted this data to us for other purposes and elsewhere (e.g. newsletter subscription), they will remain with us.
+
+Storage period of comments
+
+The comments and the associated data (e.g. IP address) are stored and remain on this website until the commented content has been completely deleted or the comments have to be deleted for legal reasons (e.g. offensive comments).
+
+Legal basis
+
+The comments are stored on the basis of your consent (Art. 6 para. 1 lit. a DSGVO). You can revoke your consent at any time. An informal e-mail notification to us is sufficient for this purpose. The legality of the data processing operations that have already taken place remains unaffected by the revocation.
+5th Newsletter
+Newsletter data
+
+If you wish to receive the newsletter offered on the website, we require an e-mail address from you as well as information which allows us to verify that you are the owner of the e-mail address provided and that you agree to receive the newsletter. Further data will not be collected or will only be collected on a voluntary basis. We use this data exclusively for sending the requested information and do not pass it on to third parties.
+
+The processing of the data entered in the newsletter registration form is carried out exclusively on the basis of your consent (Art. 6 para. 1 lit. a DSGVO). You may revoke your consent to the storage of data, your e-mail address and their use for sending the newsletter at any time, for example via the "Unsubscribe" link in the newsletter. The legality of the data processing procedures already carried out remains unaffected by the revocation.
+
+The data you have stored with us for the purpose of subscribing to the newsletter will be stored with us or the newsletter service provider until you unsubscribe from the newsletter and will be removed from the newsletter distribution list after you unsubscribe from the newsletter. Data stored by us for other purposes will not be affected by this. After you have unsubscribed from the newsletter distribution list, your e-mail address may be stored by us or the newsletter service provider in a blacklist to prevent future mailings. The data from the blacklist will only be used for this purpose and will not be combined with other data. This serves both your interest and our interest in complying with the legal requirements when sending newsletters (legitimate interest in the sense of Art. 6 Para. 1 lit. f DSGVO). Storage in the blacklist is not limited in time. You may object to the storage if your interests outweigh our legitimate interest.
+### 6. plugins and tools
+YouTube
+
+This website includes videos from the YouTube website. The website is operated by Google Ireland Limited („Google“), Gordon House, Barrow Street, Dublin 4, Ireland.
+
+When you visit one of our websites on which YouTube is integrated, a connection is established to the servers of YouTube. The YouTube server will be told which of our pages you have visited.
+
+YouTube may also store various cookies on your device. With the help of these cookies, YouTube can obtain information about visitors to this website. This information is used, among other things, to collect video statistics, improve usability and prevent fraud. Cookies remain on your device until you delete them.
+
+When you are logged into your YouTube account, you allow YouTube to directly associate your browsing behavior with your personal profile. You can prevent this by logging out of your YouTube account.
+
+YouTube is used in the interest of an appealing presentation of our online offers. This constitutes a legitimate interest within the meaning of Art. 6 para. 1 lit. f DSGVO. If a corresponding consent has been requested (e.g. consent to the storage of cookies), the processing is exclusively based on Art. 6 Para. 1 lit. a DSGVO; the consent can be revoked at any time.
+
+Further information on the handling of user data can be found in YouTube's data protection declaration under: https://policies.google.com/privacy?hl=de.
+Vimeo
+
+This website uses plugins of the video portal Vimeo. Provider is Vimeo Inc., 555 West 18th Street, New York, New York 10011, USA.
+
+When you visit one of our pages equipped with a Vimeo plugin, a connection to the servers of Vimeo is established. This will tell the Vimeo server which of our pages you have visited. Vimeo also obtains your IP address. This also applies if you are not logged in to Vimeo or do not have an account with Vimeo. The information collected by Vimeo is transmitted to the Vimeo server in the USA. If you are logged into your Vimeo account, you allow Vimeo to associate your surfing behavior directly with your personal profile. You can prevent this by logging out of your Vimeo account.
+
+The use of Vimeo takes place in the interest of an appealing representation of our online offers. This constitutes a legitimate interest within the meaning of Art. 6 Para. 1 lit. f DSGVO. If a corresponding consent has been requested (e.g. a consent to the storage of cookies), the processing will be based exclusively on Art. 6 para. 1 lit. a DSGVO; the consent can be revoked at any time.
+
+Further information on the handling of user data can be found in Vimeo's data protection declaration under: https://vimeo.com/privacy.
+Spotify
+
+Functions of the music service Spotify are integrated on this website. The provider is Spotify AB, Birger Jarlsgatan 61, 113 56 Stockholm, Sweden. You can recognize the Spotify plugins by the green logo on this website. An overview of the Spotify plugins can be found at: https://developer.spotify.com.
+
+Thereby a direct connection between your browser and the Spotify server can be established via the plugin when visiting this website. Spotify receives the information that you have visited this website with your IP address. If you click the Spotify button while logged into your Spotify account, you can link the content of this website to your Spotify profile. This enables Spotify to assign the visit to this website to your user account.
+
+Data processing is based on Art. 6 Para. 1 lit. f DSGVO. The website operator has a legitimate interest in the appealing acoustic design of his website.
+
+Further information on this can be found in Spotify's data protection statement: https://www.spotify.com/de/legal/privacy-policy/.
+
+If you do not wish Spotify to assign your visit to this website to your Spotify user account, please log out of your Spotify user account.
+
+Source: https://www.e-recht24.de
+
+Source: https://www.deepl.com/translator
