@@ -8,7 +8,7 @@ Steubenstr. 45
 69121 Heidelberg  
 Contact  
 
-E-mail: mail(at)tinfoil-hat.net  
+E-mail: privat@nchristian.net
 Liability for content  
 
 As a service provider, we are responsible for our own content on these pages in accordance with the general laws pursuant to § 7 para.1 TMG. According to §§ 8 to 10 TMG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to search for circumstances that indicate illegal activity.
