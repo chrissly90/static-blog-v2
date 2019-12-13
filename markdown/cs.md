@@ -26,9 +26,9 @@
 ## Linklist
 
  - [Contabo - Cheap VPS](https://contabo.com)
- - [RSS - iframe - Converter this Site uses](https://rss.bloople.net/)
+ - [RSS - iframe - Converter](https://rss.bloople.net/)
  - [Lobste.rs](https://lobste.rs/)
- - [Comment engine for this Blog](https://github.com/dyu/comments)
+ - [Comment engine](https://github.com/dyu/comments)
  - [network-Tools](https://network-tools.com/)
  - [Text to Binary translator](https://www.thematrixer.com/binary.php)
  - [whatsmyip.com](https://whatsmyip.com/)
