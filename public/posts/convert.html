@@ -39,10 +39,10 @@ x;border-bottom:1px solid #555">
                 <!-- A -->
                         <div style="float:left;padding:0px 14px 7px 0px;max-width:640px;display:inline-block">
 
-<p>#!/usr/local/bin/bash</p>
-<p>if [[ $# -eq 0 ]] ; then echo “Usage: <inputfile> <newfilename>”; echo “or: <inputfile> <newfilename> <category>”; echo “possible categories:” echo “$(ls –color public/ | grep -v style.css |grep -v index.html)”; exit 0; fi</p>
-<p>pandoc –to=html –from=markdown -o ../tmp/tmp.html “$1”; cat ../src/header.html ../tmp/tmp.html ../src/footer.html &gt; ../public/posts/$2;</p>
-<p>if [ “$#” -ne 3 ] then echo “file public/posts/$2 successfully created”; else mv ../public/posts/$2 ../public/$3/$2; echo “successfully created time public/$3/$2”;</p>
+<h1 id="binbash">!/bin/bash</h1>
+<p>if [[ $# -eq 0 ]] ; then echo &quot;Usage: <inputfile> <newfilename>&quot;; echo &quot;or: <inputfile> <newfilename> <category>&quot;; echo &quot;possible categories:&quot; echo &quot;$(ls --color public/ | grep -v style.css |grep -v index.html)&quot;; exit 0; fi</p>
+<p>pandoc --to=html --from=markdown -o ../tmp/tmp.html &quot;$1&quot;; cat ../src/header.html ../tmp/tmp.html ../src/footer.html &gt; ../public/posts/$2;</p>
+<p>if [ &quot;$#&quot; -ne 3 ] then echo &quot;file public/posts/$2 successfully created&quot;; else mv ../public/posts/$2 ../public/$3/$2; echo &quot;successfully created time public/$3/$2&quot;;</p>
 <p>fi</p>
 <p>exit 0</p>
                 </div>

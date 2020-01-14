@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 PS3='Select how to continue...'
 options=("Link Single File to dir" "Relink ALL files" "Quit")
 select choose in "${options[@]}"

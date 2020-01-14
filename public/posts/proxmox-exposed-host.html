@@ -39,17 +39,17 @@ x;border-bottom:1px solid #555">
                 <!-- A -->
                         <div style="float:left;padding:0px 14px 7px 0px;max-width:640px;display:inline-block">
 
-<p>In This Post I’m showing you How to create a Proxmox host which is reachable trough internet. It presupposes you have Proxmox already installed on your server:</p>
+<p>In This Post I'm showing you How to create a Proxmox host which is reachable trough internet. It presupposes you have Proxmox already installed on your server:</p>
 <h2 id="access-and-update-the-server">1. Access and Update the Server</h2>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>Create and copy your SSH Key</li>
 <li>Connect with SSH Key</li>
 <li>Upgrade Server</li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">apt-get</span> update <span class="kw">&amp;&amp;</span> <span class="ex">apt-get</span> dist-upgrade -y</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">apt-get</span> update <span class="kw">&amp;&amp;</span> <span class="ex">apt-get</span> dist-upgrade -y</code></pre></div>
 <hr />
 <h2 id="harden-ssh">2. Harden SSH:</h2>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>Unstall UFW</li>
 <li>Allow Port 22 (SSH Port) with Protocol TCP</li>
 <li>Reload and activate UFW</li>
@@ -57,175 +57,175 @@ x;border-bottom:1px solid #555">
 <li>install sudo</li>
 <li>Add new user to sudo Group</li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">apt-get</span> install ufw</a>
-<a class="sourceLine" id="cb2-2" title="2"><span class="ex">ufw</span> allow 22/tcp</a>
-<a class="sourceLine" id="cb2-3" title="3"><span class="ex">ufw</span> enable</a>
-<a class="sourceLine" id="cb2-4" title="4"><span class="ex">adduser</span> yourusername</a>
-<a class="sourceLine" id="cb2-5" title="5"><span class="ex">apt-get</span> install sudo</a>
-<a class="sourceLine" id="cb2-6" title="6"><span class="fu">sudo</span> adduser mynewuser sudo</a>
-<a class="sourceLine" id="cb2-7" title="7"><span class="fu">nano</span> /etc/ssh/sshd_config</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">apt-get</span> install ufw
+<span class="ex">ufw</span> allow 22/tcp
+<span class="ex">ufw</span> enable
+<span class="ex">adduser</span> yourusername
+<span class="ex">apt-get</span> install sudo
+<span class="fu">sudo</span> adduser mynewuser sudo
+<span class="fu">nano</span> /etc/ssh/sshd_config</code></pre></div>
 <ul>
 <li>Now edit / instert the following</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">PermitRootLogin</span> no</a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="ex">MaxAuthTries</span> 6</a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="ex">AllowUsers</span> yourusername</a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="ex">PasswordAuthentication</span> no</a>
-<a class="sourceLine" id="cb3-5" title="5"><span class="ex">PermitEmptyPasswords</span> no</a>
-<a class="sourceLine" id="cb3-6" title="6"><span class="ex">PubkeyAuthentication</span> yes</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">PermitRootLogin</span> no
+<span class="ex">MaxAuthTries</span> 6
+<span class="ex">AllowUsers</span> yourusername
+<span class="ex">PasswordAuthentication</span> no
+<span class="ex">PermitEmptyPasswords</span> no
+<span class="ex">PubkeyAuthentication</span> yes</code></pre></div>
 <ul>
 <li>Now reload SSH via:</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">systemctl</span> restart sshd</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">systemctl</span> restart sshd</code></pre></div>
 <hr />
 <h2 id="geoblocking-unwanted-visitors">3. Geoblocking unwanted Visitors:</h2>
 <ul>
 <li>Geoblock with: <a href="https://git.tinfoil-hat.net/tinfoil-hat/ip-backlist-china-and-russia">Russian Blocklist / China Blocklist</a></li>
 </ul>
 <h2 id="attention-run-in-screen-this-takes-a-large-amount-of-time">Attention: Run in screen, this takes a large amount of time!</h2>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>Install screen and git</li>
 <li>Copy blacklist sources</li>
 <li>Change directory to copied Sources</li>
-<li>Create Screen session (if SSH session is interrupted the command doesn’t cancel)</li>
+<li>Create Screen session (if SSH session is interrupted the command doesn't cancel)</li>
 <li>This is a while loop in Bash and will deny the connections from the IP adresses in this file. This step may take 1 to 2 hours to complete.
 <ul>
 <li>After you executed the command, you can send Screen to the Background with: CTRL+a+d</li>
 </ul></li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">apt-get</span> install screen git</a>
-<a class="sourceLine" id="cb5-2" title="2"><span class="fu">git</span> clone https://git.tinfoil-hat.net/tinfoil-hat/ip-backlist-china-and-russia</a>
-<a class="sourceLine" id="cb5-3" title="3"><span class="bu">cd</span> ip-backlist-china-and-russia/</a>
-<a class="sourceLine" id="cb5-4" title="4"><span class="ex">screen</span> -S blocklist</a>
-<a class="sourceLine" id="cb5-5" title="5"><span class="kw">while</span> <span class="bu">read</span> <span class="va">line</span>; <span class="kw">do</span> <span class="fu">sudo</span> ufw deny from <span class="va">$line</span><span class="kw">;</span> <span class="kw">done</span> <span class="op">&lt;</span> <span class="ex">blocklist.txt</span> <span class="kw">&amp;&amp;</span> <span class="fu">bash</span> block_china_ufw.sh</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">apt-get</span> install screen git
+<span class="fu">git</span> clone https://git.tinfoil-hat.net/tinfoil-hat/ip-backlist-china-and-russia
+<span class="bu">cd</span> ip-backlist-china-and-russia/
+<span class="ex">screen</span> -S blocklist
+<span class="kw">while</span> <span class="bu">read</span> <span class="va">line</span>; <span class="kw">do</span> <span class="fu">sudo</span> ufw deny from <span class="va">$line</span><span class="kw">;</span> <span class="kw">done</span> <span class="op">&lt;</span> <span class="ex">blocklist.txt</span> <span class="kw">&amp;&amp;</span> <span class="fu">bash</span> block_china_ufw.sh</code></pre></div>
 <hr />
 <h2 id="optional-make-ssh-port-accessable-only-via-vpn-connection-or-your-static-ip">4. (Optional) Make SSH Port accessable only via VPN Connection or your Static IP:</h2>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>Use / download Openvpn script: <a href="https://github.com/angristan/openvpn-install">angristan/openvpn-install</a></li>
 <li>Change directory to Openvpn script</li>
 <li>Make script executable</li>
 <li>run Openvpn script</li>
 <li>Allow SSH traffic from your OpenVPN connection</li>
 <li>Allow SSH traffic from your Static IP Address (if you have one at home)</li>
-<li>Change loglevel of your UFW so that the logfiles don’t get gigantic.</li>
+<li>Change loglevel of your UFW so that the logfiles don't get gigantic.</li>
 <li>Edit /etc/default/ufw</li>
 </ol>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="fu">git</span> clone https://github.com/angristan/openvpn-install</a>
-<a class="sourceLine" id="cb6-2" title="2"><span class="bu">cd</span> openvpn-install/</a>
-<a class="sourceLine" id="cb6-3" title="3"><span class="fu">chmod</span> +x openvpn-install.sh</a>
-<a class="sourceLine" id="cb6-4" title="4"><span class="ex">./openvpn-install.sh</span></a>
-<a class="sourceLine" id="cb6-5" title="5"><span class="ex">ufw</span> allow from  10.8.0.0/24  to any port 22</a>
-<a class="sourceLine" id="cb6-6" title="6"><span class="ex">ufw</span> allow from  *staticip*  to any port 22</a>
-<a class="sourceLine" id="cb6-7" title="7"><span class="ex">ufw</span> logging low</a>
-<a class="sourceLine" id="cb6-8" title="8"><span class="fu">nano</span> /etc/default/ufw</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">git</span> clone https://github.com/angristan/openvpn-install
+<span class="bu">cd</span> openvpn-install/
+<span class="fu">chmod</span> +x openvpn-install.sh
+<span class="ex">./openvpn-install.sh</span>
+<span class="ex">ufw</span> allow from  10.8.0.0/24  to any port 22
+<span class="ex">ufw</span> allow from  *staticip*  to any port 22
+<span class="ex">ufw</span> logging low
+<span class="fu">nano</span> /etc/default/ufw</code></pre></div>
 <ul>
 <li>Allow troughput trough your VPN Connection and avoid getting no internet connection when you are connected with your VPN</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="va">DEFAULT_FORWARD_POLICY=</span><span class="st">&quot;ACCEPT&quot;</span></a></code></pre></div>
-<ol start="9" type="1">
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="va">DEFAULT_FORWARD_POLICY=</span><span class="st">&quot;ACCEPT&quot;</span></code></pre></div>
+<ol start="9" style="list-style-type: decimal">
 <li>edit /etc/network/interfaces</li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="fu">nano</span> /etc/network/interfaces</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">nano</span> /etc/network/interfaces</code></pre></div>
 <ul>
 <li>Add the following Text under your main Interface:</li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1">    <span class="ex">post-up</span> echo 1 <span class="op">&gt;</span> /proc/sys/net/ipv4/ip_forward</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">    <span class="ex">post-up</span> echo 1 <span class="op">&gt;</span> /proc/sys/net/ipv4/ip_forward</code></pre></div>
 <ul>
 <li><em>This line will also allow you to access the Internet when connected trough your VPN</em></li>
 </ul>
 <hr />
 <h2 id="convert-yor-debian-10-server-to-proxmox-6">5. Convert yor Debian 10 Server to Proxmox 6</h2>
-<ol type="1">
-<li>Add an /etc/hosts entry for your IP address
+<ol style="list-style-type: decimal">
+<li>Add an /etc/hosts entry for your IP address</li>
+</ol>
 <ul>
 <li>Note: Make sure that no IPv6 address for your hostname is specified in /etc/hosts.</li>
 <li>For instance, if your IP address is 192.168.15.77, and your hostname prox4m1, then your /etc/hosts file should look like:</li>
-</ul></li>
-</ol>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="ex">127.0.0.1</span>       localhost.localdomain localhost</a>
-<a class="sourceLine" id="cb10-2" title="2"><span class="ex">192.168.15.77</span>   prox4m1.proxmox.com prox4m1</a>
-<a class="sourceLine" id="cb10-3" title="3"></a>
-<a class="sourceLine" id="cb10-4" title="4"><span class="co"># The following lines are desirable for IPv6 capable hosts</span></a>
-<a class="sourceLine" id="cb10-5" title="5">::<span class="ex">1</span>     localhost ip6-localhost ip6-loopback</a>
-<a class="sourceLine" id="cb10-6" title="6"><span class="ex">ff02</span>::1 ip6-allnodes</a>
-<a class="sourceLine" id="cb10-7" title="7"><span class="ex">ff02</span>::2 ip6-allrouters</a></code></pre></div>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">127.0.0.1</span>       localhost.localdomain localhost
+<span class="ex">192.168.15.77</span>   prox4m1.proxmox.com prox4m1
+
+<span class="co"># The following lines are desirable for IPv6 capable hosts</span>
+::<span class="ex">1</span>     localhost ip6-localhost ip6-loopback
+<span class="ex">ff02</span>::1 ip6-allnodes
+<span class="ex">ff02</span>::2 ip6-allrouters</code></pre></div>
 <ul>
 <li>You can test if your setup is ok using the hostname command:</li>
 </ul>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="fu">hostname</span> --ip-address</a>
-<a class="sourceLine" id="cb11-2" title="2"><span class="ex">192.168.15.77</span> <span class="co"># should return your IP address here</span></a></code></pre></div>
-<ol start="2" type="1">
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">hostname</span> --ip-address
+<span class="ex">192.168.15.77</span> <span class="co"># should return your IP address here</span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
 <li>Adapt your sources.list</li>
 </ol>
 <ul>
 <li>Add the Proxmox VE repository:</li>
 </ul>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb12-1" title="1"><span class="bu">echo</span> <span class="st">&quot;deb http://download.proxmox.com/debian/pve buster pve-no-subscription&quot;</span> <span class="op">&gt;</span> /etc/apt/sources.list.d/pve-install-repo.list</a></code></pre></div>
-<ol start="3" type="1">
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="bu">echo</span> <span class="st">&quot;deb http://download.proxmox.com/debian/pve buster pve-no-subscription&quot;</span> <span class="op">&gt;</span> /etc/apt/sources.list.d/pve-install-repo.list</code></pre></div>
+<ol start="3" style="list-style-type: decimal">
 <li>Add the Proxmox VE repository key:</li>
 </ol>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb13-1" title="1"><span class="fu">wget</span> http://download.proxmox.com/debian/proxmox-ve-release-6.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-6.x.gpg</a>
-<a class="sourceLine" id="cb13-2" title="2"><span class="fu">chmod</span> +r /etc/apt/trusted.gpg.d/proxmox-ve-release-6.x.gpg  <span class="co"># optional, if you have a non-default umask</span></a></code></pre></div>
-<ol start="4" type="1">
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">wget</span> http://download.proxmox.com/debian/proxmox-ve-release-6.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-6.x.gpg
+<span class="fu">chmod</span> +r /etc/apt/trusted.gpg.d/proxmox-ve-release-6.x.gpg  # optional, if you have a non-default umask</code></pre></div>
+<ol start="4" style="list-style-type: decimal">
 <li>Update your repository and system by running:</li>
 </ol>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb14-1" title="1"><span class="ex">apt</span> update <span class="kw">&amp;&amp;</span> <span class="ex">apt</span> full-upgrade</a></code></pre></div>
-<ol start="5" type="1">
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">apt</span> update <span class="kw">&amp;&amp;</span> <span class="ex">apt</span> full-upgrade</code></pre></div>
+<ol start="5" style="list-style-type: decimal">
 <li>Install the Proxmox VE packages</li>
 </ol>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb15-1" title="1"><span class="ex">apt</span> install proxmox-ve postfix open-iscsi</a></code></pre></div>
-<ol start="6" type="1">
-<li>Recommended: remove the os-prober package
-<ul>
-<li>The os-prober package scans all the partitions of your host, including those assigned to guests VMs, to create dual-boot GRUB entries. If you didn’t install Proxmox VE as dual boot beside another Operating System, you can safely remove the os-prober package.</li>
-</ul></li>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">apt</span> install proxmox-ve postfix open-iscsi</code></pre></div>
+<ol start="6" style="list-style-type: decimal">
+<li>Recommended: remove the os-prober package</li>
 </ol>
-<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb16-1" title="1"><span class="ex">apt</span> remove os-prober</a></code></pre></div>
-<ol start="7" type="1">
+<ul>
+<li>The os-prober package scans all the partitions of your host, including those assigned to guests VMs, to create dual-boot GRUB entries. If you didn't install Proxmox VE as dual boot beside another Operating System, you can safely remove the os-prober package.</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">apt</span> remove os-prober</code></pre></div>
+<ol start="7" style="list-style-type: decimal">
 <li>Update and check grub2 config by running:</li>
 </ol>
-<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb17-1" title="1"><span class="ex">update-grub</span></a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">update-grub</span></code></pre></div>
 <h2 id="now-reboot">Now Reboot:</h2>
-<div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb18-1" title="1"><span class="ex">reboot</span></a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">reboot</span></code></pre></div>
 <hr />
 <h2 id="enter-proxmox-management-ui">6. Enter Proxmox Management UI</h2>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>Allow the Proxmox management Port (8006) to be open</li>
 <li>Reload UFW</li>
 <li>After that your Management Web Interface should be reachable in your Browser under https://your-ip-address:8006/</li>
 </ol>
-<div class="sourceCode" id="cb19"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb19-1" title="1"><span class="ex">ufw</span> allow 8006/tcp</a>
-<a class="sourceLine" id="cb19-2" title="2"><span class="ex">ufw</span> reload</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">ufw</span> allow 8006/tcp
+<span class="ex">ufw</span> reload</code></pre></div>
 <hr />
 <h2 id="configure-proxmox">6. Configure Proxmox</h2>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>Edit the file /etc/network/interfaces</li>
 </ol>
 <ul>
 <li>Paste the following (if your Main Interface is eth0)</li>
 <li>Notice that I moved the Part <em>post-up echo 1 &gt; /proc/sys/net/ipv4/ip_forward</em> now from the Hardware Interface to the newly created Linux Bridge (vmbr1)</li>
 </ul>
-<div class="sourceCode" id="cb20"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb20-1" title="1"><span class="ex">auto</span> vmbr1</a>
-<a class="sourceLine" id="cb20-2" title="2"><span class="ex">iface</span> vmbr1 inet static</a>
-<a class="sourceLine" id="cb20-3" title="3">        <span class="ex">address</span>  10.10.10.254</a>
-<a class="sourceLine" id="cb20-4" title="4">        <span class="ex">netmask</span>  255.255.255.0</a>
-<a class="sourceLine" id="cb20-5" title="5">        <span class="ex">bridge-ports</span> none</a>
-<a class="sourceLine" id="cb20-6" title="6">        <span class="ex">bridge-stp</span> off</a>
-<a class="sourceLine" id="cb20-7" title="7">        <span class="ex">bridge-fd</span> 0</a>
-<a class="sourceLine" id="cb20-8" title="8"></a>
-<a class="sourceLine" id="cb20-9" title="9">        <span class="ex">dns-nameservers</span> 208.67.222.222 208.67.220.220</a>
-<a class="sourceLine" id="cb20-10" title="10"></a>
-<a class="sourceLine" id="cb20-11" title="11">        <span class="ex">post-up</span> echo 1 <span class="op">&gt;</span> /proc/sys/net/ipv4/ip_forward</a>
-<a class="sourceLine" id="cb20-12" title="12"></a>
-<a class="sourceLine" id="cb20-13" title="13">        <span class="ex">post-up</span> iptables -t nat -A POSTROUTING -s <span class="st">&#39;10.10.10.0/24&#39;</span> -o eth0 -j MASQUERADE</a>
-<a class="sourceLine" id="cb20-14" title="14">        <span class="ex">post-down</span> iptables -t nat -D POSTROUTING -s <span class="st">&#39;10.10.10.0/24&#39;</span> -o eth0 -j MASQUERADE</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">auto</span> vmbr1
+<span class="ex">iface</span> vmbr1 inet static
+        <span class="ex">address</span>  10.10.10.254
+        <span class="ex">netmask</span>  255.255.255.0
+        <span class="ex">bridge-ports</span> none
+        <span class="ex">bridge-stp</span> off
+        <span class="ex">bridge-fd</span> 0
+
+        <span class="ex">dns-nameservers</span> 208.67.222.222 208.67.220.220
+
+        <span class="ex">post-up</span> echo 1 <span class="op">&gt;</span> /proc/sys/net/ipv4/ip_forward
+
+        <span class="ex">post-up</span> iptables -t nat -A POSTROUTING -s <span class="st">&#39;10.10.10.0/24&#39;</span> -o eth0 -j MASQUERADE
+        <span class="ex">post-down</span> iptables -t nat -D POSTROUTING -s <span class="st">&#39;10.10.10.0/24&#39;</span> -o eth0 -j MASQUERADE</code></pre></div>
 <h2 id="now-reboot-1">Now Reboot:</h2>
-<div class="sourceCode" id="cb21"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb21-1" title="1"><span class="ex">reboot</span></a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">reboot</span></code></pre></div>
 <ul>
 <li>Your Network Configuration in your Web Interface Should now look something like this:</li>
 </ul>
 <p><a href="/uploads/proxmox-bridge.png"><img src="https://wiki.tinfoil-hat.net/uploads/images/gallery/2019-10/scaled-1680-/Screenshot-from-2019-10-23-04-06-56.png" alt="Screenshot-from-2019-10-23-04-06-56.png" /></a></p>
-<h1 id="to-be-continued">To be continued …</h1>
+<h1 id="to-be-continued-...">To be continued ...</h1>
                 </div>
                 <!-- A -->
                 <div style="padding-bottom:2px;display:inline-block;width:420px;max-width:100%">

@@ -15,11 +15,11 @@
 
 <script src="//rss.bloople.net/?url=https%3A%2F%2Frss.tinfoil-hat.net%2Fi%2F%3Fa%3Drss%26get%3Dc_4%26user%3Dtinfoil-hat%26token%3Djs8CVkFsWePXU338KicyZmjsWwWYj9aEYiRmt%26hours%3D168&limit=5&showtitle=false&type=js"></script>
 
-## Security Alters RSS Feed
+## Security Alerts RSS Feed
 
 <script src="//rss.bloople.net/?url=https%3A%2F%2Frss.tinfoil-hat.net%2Fi%2F%3Fa%3Drss%26get%3Dc_3%26user%3Dtinfoil-hat%26token%3Djs8CVkFsWePXU338KicyZmjsWwWYj9aEYiRmt%26hours%3D168&limit=5&showtitle=false&type=js"></script>
 
-# xkcd - latest comic
+## xkcd - latest comic
 
 <script src="//rss.bloople.net/?url=https%3A%2F%2Frss.tinfoil-hat.net%2Fi%2F%3Fa%3Drss%26get%3Df_10%26user%3Dtinfoil-hat%26token%3Djs8CVkFsWePXU338KicyZmjsWwWYj9aEYiRmt%26hours%3D168&limit=1&showtitle=false&type=js"></script>
 
