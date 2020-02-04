@@ -9,3 +9,6 @@
     - Native RSS feeds
 
 Nitter's GitHub wiki contains a list of [instances](https://github.com/zedeus/nitter/wiki/Instances) and a list of [browser extensions](https://github.com/zedeus/nitter/wiki/Extensions) maintained by the community.
+
+**Update: Nitter main Instance is down! Use another Instance, for example [https://nitter.nixnet.services](https://nitter.nixnet.services)**
+**Addition: To Redirect Twitter to Nitter in Bowser use: [https://addons.mozilla.org/de/firefox/addon/invidition/](https://addons.mozilla.org/de/firefox/addon/invidition/)**

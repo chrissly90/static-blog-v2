@@ -5,7 +5,7 @@ Contact me via [Mail](mailto:mail@tinfoil-hat.net) and NOT instant messaging! Or
 ## How to contact me
 
 1. preferred method: [E-Mail](mailto:mail@tinfoil-hat.net) - extra Points for GPG
-2. preferred fallback method: XMPP/Jabber (tinfoil-hat@xmpp.tinfoil-hat.net) extra Points for GPG
+2. preferred fallback method: XMPP/Jabber (chrissly90@jabber.nchristian.net) extra Points for GPG
 3. preferred second fallback mehtod: IRC - with off-the-record (otr) via query
 
 ## Other methods to contact me:  

@@ -17,7 +17,7 @@ do
 		        echo "File $option selected"
 		        # processing
 	            PS3='linking file to dir: '
-	            options=("Computerscience" "Conspiracy Theories" "Hacktivism" "Hosting" "Posts" "Privacy" "Quit")
+	            options=("Computerscience" "Conspiracy Theories" "Hacktivism" "Posts" "Privacy" "Quit")
 	            select opt in "${options[@]}"
 	            do
 	                case $opt in
@@ -37,13 +37,6 @@ do
 	                      ;;
 	            		"Hacktivism")
 	                      cd ../hacktivism/
-	            		  ln -s ../posts/$opt .
-                          echo "linked file $opt to $(pwd)"
-	            		  cd ../posts/
-	                      break
-	                      ;;
-	            		"Hosting")
-	                      cd ../hosting/
 	            		  ln -s ../posts/$opt .
                           echo "linked file $opt to $(pwd)"
 	            		  cd ../posts/
@@ -86,7 +79,7 @@ do
             echo "Processing $f file..."
             # take action on each file. $f store current file name
             PS3='linking files to dir: '
-            options=("Computerscience" "Conspiracy Theories" "Hacktivism" "Hosting" "Posts" "Privacy" "Quit")
+            options=("Computerscience" "Conspiracy Theories" "Hacktivism" "Posts" "Privacy" "Quit")
             select opt in "${options[@]}"
             do
                 case $opt in
@@ -109,13 +102,6 @@ do
                       rm ../hacktivism/$f
             		  ln -s ../posts/$f .
             		  cd ../posts/
-                      break
-                      ;;
-            		"Hosting")
-                      cd ../hosting/
-                      rm ../hosting/$f
-            			ln -s ../posts/$f .
-            			cd ../posts/
                       break
                       ;;
             		"Posts")

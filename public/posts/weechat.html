@@ -26,8 +26,7 @@ x;border-bottom:1px solid #555">
             </div>
             <!-- Menu -->
             	<div class="floatdiv"><a title="to Startpage" href="../index.html" style="color:#fff;border:0px">Start</a></div>
-            	<div class="floatdiv"><a title="IT-Blog, References and Links" href="../cs/structure.html" style="color:#fff;border:0px">Computer Science</a></div>
-            	<div class="floatdiv"><a title="Public Hosting" href="../hosting/hosting.html" style="color:#fff;border:0px">Public Hosting</a></div>
+            	<div class="floatdiv"><a title="IT-Blog, References and Links" href="../cs/cs.html" style="color:#fff;border:0px">Computer Science</a></div>
             	<div class="floatdiv"><a title="Anonymity" href="../privacy/structure.html" style="color:#fff;border:0px">Anonymity</a></div>
             	<div class="floatdiv"><a title="Call of Duty" href="../hacktivism/structure.html" style="color:#fff;border:0px">Hacktivism</a></div>
             	<div class="floatdiv"><a title="Conspiracy Theories" href="../ct/ct.html" style="color:#fff;border:0px">Conspiracy Theories</a></div>
@@ -39,15 +38,54 @@ x;border-bottom:1px solid #555">
                 <!-- A -->
                         <div style="float:left;padding:0px 14px 7px 0px;max-width:640px;display:inline-block">
 
-<p><a href="https://nitter.net/">Nitter</a> is a free and open source alternative Twitter front-end focused on privacy. The source is available on GitHub at <a href="https://github.com/zedeus/nitter">https://github.com/zedeus/nitter</a></p>
-<pre><code>- No JavaScript or ads
-- All requests go through the backend, clients never talk to Twitter
-- Prevents Twitter from tracking your IP or JavaScript fingerprint
-- Uses unofficial API (no developer account required)
-- AGPLv3 licensed, no proprietary instances permitted
-- Lightweight (for @nim_lang, 36KB vs 580KB from twitter.com)
-- Native RSS feeds</code></pre>
-<p>Nitter’s GitHub wiki contains a list of <a href="https://github.com/zedeus/nitter/wiki/Instances">instances</a> and a list of <a href="https://github.com/zedeus/nitter/wiki/Extensions">browser extensions</a> maintained by the community.</p>
+<h1 id="use-weechat-with-znc">Use Weechat with ZNC</h1>
+<ol type="1">
+<li><code>/server add Network public-ip-address/8181 -ssl -username=admin/Network -password=***************** -autoconnect</code></li>
+<li><code>/set irc.server.Network.ssl_fingerprint &lt;insert ssl fingerprint (see below)&gt;</code></li>
+<li><code>/connect Network</code></li>
+<li><code>/save</code></li>
+</ol>
+<h1 id="get-ssl-fingerprint">Get SSL Fingerprint</h1>
+<p><code>cat ~/.znc/znc.pem | openssl x509 -sha512 -fingerprint -noout | tr -d ':' | tr 'A-Z' 'a-z' | cut -d = -f 2</code></p>
+<h1 id="torify-weechat">TORify Weechat</h1>
+<h2 id="enable-sasl-external">Enable SASL EXTERNAL</h2>
+<pre><code>* Create a new certificate TLS. ref</code></pre>
+<pre><code>    mkdir ~/.weechat/certs
+    cd ~/.weechat/certs
+    openssl req -x509 -new -newkey rsa:4096 -sha256 -days 1000 -nodes -out freenode.pem -keyout freenode.pem</code></pre>
+<pre><code>* Find sha1sum fingerprint.</code></pre>
+<pre><code>    openssl x509 -in freenode.pem -outform der | sha1sum -b | cut -d&#39; &#39; -f1</code></pre>
+<h2 id="switch-to-ssl">switch to ssl</h2>
+<pre><code>    /msg nickserv cert add e084219c214d391a8fd75cdbb891b5b966515db7
+    /set irc.server.freenode.ssl_priorities &quot;NORMAL:-VERS-TLS-ALL:+VERS-TLS1.0:+VERS-SSL3.0:%COMPAT&quot;
+    /set irc.server.freenode.ssl_cert &quot;%h/certs/freenode.pem&quot;
+    /set irc.server.freenode.sasl_mechanism external
+    /set irc.server.freenode.ssl on
+    /set irc.server.freenode.addresses &quot;chat.freenode.net/6697&quot;
+    /reconnect freenode</code></pre>
+<h2 id="tor">TOR</h2>
+<pre><code>    /set irc.server.freenode.addresses &quot;freenodeok2gncmy.onion/7000&quot;
+    /proxy add tor socks5 127.0.0.1 9050
+    /set irc.server.freenode.proxy &quot;tor&quot;
+
+    You have to disable ssl_verify which doesn’t work with TOR.
+
+    /set irc.server.freenode.ssl_verify off
+    /reconnect freenode</code></pre>
+<h2 id="enhance-your-privacy">Enhance your privacy</h2>
+<pre><code>    /set irc.server_default.msg_part &quot;&quot;
+    /set irc.server_default.msg_quit &quot;&quot;
+    /set irc.ctcp.clientinfo &quot;&quot;
+    /set irc.ctcp.finger &quot;&quot;
+    /set irc.ctcp.source &quot;&quot;
+    /set irc.ctcp.time &quot;&quot;
+    /set irc.ctcp.userinfo &quot;&quot;
+    /set irc.ctcp.version &quot;&quot;
+    /set irc.ctcp.ping &quot;&quot;
+    /plugin unload xfer
+    /set weechat.plugin.autoload &quot;*,!xfer&quot;</code></pre>
+<h2 id="save-all-our-works">Save all our works:</h2>
+<pre><code>/save</code></pre>
                 </div>
                 <!-- A -->
                 <div style="padding-bottom:2px;display:inline-block;width:420px;max-width:100%">
@@ -60,12 +98,12 @@ x;border-bottom:1px solid #555">
             <!-- Footer -->
             <div style="clear:both;font-size:11px;background-color:#00004d;border-bottom-left-radius:5px;border-bottom-right-radius:5px;color:#fff;padding:3px 6px 3px 6px;border-top:1px solid #555">
                 <!-- Footer Content -->
-                <a href=https://keyserver.ubuntu.com/pks/lookup?search=privat%40nchristian.net&fingerprint=on&op=index>>GPG-Fingerprint: F1AB 723C 635B 792F E18A EED8 6259 5B76 EE31 15F2</a><span class="desktop-only"> ·</span><br class="mobile-only">
+                <a href=https://keyserver.ubuntu.com/pks/lookup?search=privat%40nchristian.net&fingerprint=on&op=index>GPG-Fingerprint: F1AB 723C 635B 792F E18A EED8 6259 5B76 EE31 15F2</a><span class="desktop-only"> ·</span><br class="mobile-only">
                 <span class="desktop-only"></span><br class="mobile-only">
-                <a target="_blank" href="https://git.tinfoil-hat.net" style="color:#fff" rel="nofollow">Git Repo</a> ·</span><br class="mobile-only">
-                <a href="irc://irc.uugrn.org:6668/uugrn" style="color:#fff" rel="nofollow">IRC #uugrn tinfoil_hat</a> ·</span><br class="mobile-only">
+                <a target="_blank" href="https://git.tinfoil-hat.net/tinfoil-hat" style="color:#fff" rel="nofollow">Git Repo</a> ·</span><br class="mobile-only">
+                <a href="irc://irc.uugrn.org:6668/uugrn" style="color:#fff" rel="nofollow">IRC #uugrn tinfoil-hat</a> ·</span><br class="mobile-only">
                 <a style="color:#fff" rel="nofollow">chrissly90@jabber.nchristian.net</a> ·</span><br class="mobile-only">
-                Mail:&nbsp;<span title="Do you have any questions or complains? E-Mail me!"><a href="mailto:privat@nchristian.net" style="color:#fff">privat@nchristian.net</a></span><span class="desktop-only"> ·</span><br class="mobile-only">
+                Mail:&nbsp;<span title="Do you have any questions or complains? E-Mail me!"><a href="mailto:mail@tinfoil-hat.net" style="color:#fff">mail@tinfoil-hat.net</a></span><span class="desktop-only"> ·</span><br class="mobile-only">
                 <a href="legal.html" rel="nofollow">Legal</a> 
             </div>
             <!-- End Footer -->

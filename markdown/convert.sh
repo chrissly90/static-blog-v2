@@ -4,7 +4,7 @@ if [[ $# -eq 0 ]] ; then
 	echo "Usage: <inputfile> <newfilename>";
 	echo "or:    <inputfile> <newfilename> <category>";
 	echo "possible categories:"
-    echo "$(ls --color public/ | grep -v style.css |grep -v index.html)";
+    echo "$(ls --color ../public/ | grep -v ../public/css/style.css |grep -v ../public/index.html)";
     exit 0;
 fi
 

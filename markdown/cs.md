@@ -1,5 +1,13 @@
 # summary
 
+- [NAS-decrypt.sh](NAS-decrypt.sh.html)
+- [backup.sh](backup.html)
+- [create-ssh-key](create-ssh-key.html)
+- [proxmox-workarounds-and-fixes](proxmox-workarounds-and-fixes.html)
+- [weechat](weechat.html)
+- [wget](wget.html)
+- [youtube-dl](youtube-dl.html)
+- [NAS-decrypt.sh](NAS-decrypt.html)
 - [The Founder of Fossil Forum - on Github](fossil-forum-founder-on-Github.html)
 - [Full-Stack-Developer-vs-Full-Stack-Human](full-stack-developer-vs-full-stack-human.html)
 - [Some Coding Spotity Playlist](coding-music.html)
@@ -13,15 +21,15 @@
 
 ## Computer Science RSS Feed 
 
-<script src="//rss.bloople.net/?url=https%3A%2F%2Frss.tinfoil-hat.net%2Fi%2F%3Fa%3Drss%26get%3Dc_4%26user%3Dtinfoil-hat%26token%3Djs8CVkFsWePXU338KicyZmjsWwWYj9aEYiRmt%26hours%3D168&limit=5&showtitle=false&type=js"></script>
+<script src="//rss.bloople.net/?url=https%3A%2F%2Flobste.rs%2Frss&limit=5&type=js"></script>
 
 ## Security Alerts RSS Feed
 
-<script src="//rss.bloople.net/?url=https%3A%2F%2Frss.tinfoil-hat.net%2Fi%2F%3Fa%3Drss%26get%3Dc_3%26user%3Dtinfoil-hat%26token%3Djs8CVkFsWePXU338KicyZmjsWwWYj9aEYiRmt%26hours%3D168&limit=5&showtitle=false&type=js"></script>
+<script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.bsi.bund.de%2FSiteGlobals%2FFunctions%2FRSSFeed%2FRSSNewsfeed%2FRSSNewsfeed_WID.xml%3Bjsessionid%3D6DB492AFFEAC0A6FA4708EAA6705FDC2.1_cid360&limit=10&showtitle=false&type=js"></script>
 
-## xkcd - latest comic
+## xkcd - latest comics
 
-<script src="//rss.bloople.net/?url=https%3A%2F%2Frss.tinfoil-hat.net%2Fi%2F%3Fa%3Drss%26get%3Df_10%26user%3Dtinfoil-hat%26token%3Djs8CVkFsWePXU338KicyZmjsWwWYj9aEYiRmt%26hours%3D168&limit=1&showtitle=false&type=js"></script>
+<script src="//rss.bloople.net/?url=https%3A%2F%2Fxkcd.com%2Frss.xml&limit=3&type=js"></script>
 
 ## Linklist
 

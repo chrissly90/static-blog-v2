@@ -27,7 +27,6 @@ x;border-bottom:1px solid #555">
             <!-- Menu -->
             	<div class="floatdiv"><a title="to Startpage" href="../index.html" style="color:#fff;border:0px">Start</a></div>
             	<div class="floatdiv"><a title="IT-Blog, References and Links" href="../cs/cs.html" style="color:#fff;border:0px">Computer Science</a></div>
-            	<div class="floatdiv"><a title="Public Hosting" href="../hosting/hosting.html" style="color:#fff;border:0px">Public Hosting</a></div>
             	<div class="floatdiv"><a title="Anonymity" href="../privacy/structure.html" style="color:#fff;border:0px">Anonymity</a></div>
             	<div class="floatdiv"><a title="Call of Duty" href="../hacktivism/structure.html" style="color:#fff;border:0px">Hacktivism</a></div>
             	<div class="floatdiv"><a title="Conspiracy Theories" href="../ct/ct.html" style="color:#fff;border:0px">Conspiracy Theories</a></div>
@@ -39,54 +38,55 @@ x;border-bottom:1px solid #555">
                 <!-- A -->
                         <div style="float:left;padding:0px 14px 7px 0px;max-width:640px;display:inline-block">
 
-<!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- <meta name="Author" content="Made by 'tree'">
- <meta name="GENERATOR" content="$Version: $ tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro $">
- <title>Directory Tree</title>
- <style type="text/css">
-  <!-- 
-  BODY { font-family : ariel, monospace, sans-serif; }
-  P { font-weight: normal; font-family : ariel, monospace, sans-serif; color: black; background-color: transparent;}
-  B { font-weight: normal; color: black; background-color: transparent;}
-  A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
-  .VERSION { font-size: small; font-family : arial, sans-serif; }
-  .NORM  { color: black;  background-color: transparent;}
-  .FIFO  { color: purple; background-color: transparent;}
-  .CHAR  { color: yellow; background-color: transparent;}
-  .DIR   { color: blue;   background-color: transparent;}
-  .BLOCK { color: yellow; background-color: transparent;}
-  .LINK  { color: aqua;   background-color: transparent;}
-  .SOCK  { color: fuchsia;background-color: transparent;}
-  .EXEC  { color: green;  background-color: transparent;}
-  -->
- </style>
-</head>
-<body>
-	<h1>Directory Tree</h1><p>
-	<a href=".">.</a><br>
-	├── <a href="./donate.html">donate.html</a><br>
-	├── <a href="./hosting.html">hosting.html</a><br>
-	└── <a href="./structure.html">structure.html</a><br>
-	<br><br>
-	</p>
-	<p>
-	<br><br>
-	</p>
-	<hr>
-	<p class="VERSION">
-		 tree v1.7.0 © 1996 - 2014 by Steve Baker and Thomas Moore <br>
-		 HTML output hacked and copyleft © 1998 by Francesc Rocher <br>
-		 JSON output hacked and copyleft © 2014 by Florian Sesser <br>
-		 Charsets / OS/2 support © 2001 by Kyosuke Tokoro
-	</p>
-</body>
-</html>
+<p>In this post we will show you how to create a ssh-key and how to upload it correctly to your server.</p>
+<h3 id="creating-ssh-key">1. Creating SSH-key</h3>
+<ul>
+<li>To generate an SSH-key, enter the following command on the “home” terminal:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ssh-keygen</span> -t rsa -b 4096</span></code></pre></div>
+<ol type="1">
+<li>-t stands for type and this determines the type of key</li>
+<li>-b stands for bits. This can be used to determine the length of the key.</li>
+</ol>
+<h3 id="safing-the-ssh-key">2. Safing the SSH-key</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">Generating</span> public rsa key pair.</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="ex">Enter</span> file in which to save the key (/home/me/.ssh/id_rsa)<span class="bu">:</span></span></code></pre></div>
+<ul>
+<li>Here you can select a different location and an alternative name for the file containing the private key. Just press “Enter” to accept the given suggestion.</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">Enter</span> passphrase (empty for no passphrase)<span class="bu">:</span></span></code></pre></div>
+<ul>
+<li>Optionally, a password for the public key can be assigned here. This is always queried when the public key file is used to establish a connection.</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">Enter</span> same passphrase again:</span></code></pre></div>
+<ul>
+<li>Enter the same password again. If the field is empty, simply press “Enter”</li>
+</ul>
+<h3 id="copying-the-ssh-key-on-your-server">3. Copying the SSH-key on your server</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">ssh-copy-id</span> me@myrootserver.de</span></code></pre></div>
+<ul>
+<li>Copy the public key to the desired server. For this the password of the server is necessary.</li>
+<li>NOTE: this will only work if the public key lays on the default location</li>
+</ul>
+<h3 id="login-without-password">4. Login without password</h3>
+<p>Now, if all of the steps are done right you´ll be able to login over ssh without your password. Simply connect over ssh:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">ssh</span> user@myrootserver.de</span></code></pre></div>
+<h3 id="for-permanent-avoid-password-promt-and-use-ssh-agent-instead-add">For permanent avoid password promt and use ssh-agent instead add:</h3>
+<ol type="1">
+<li></li>
+</ol>
+<ul>
+<li>for ZSH, the following into your <code>~/.zshrc</code></li>
+</ul>
+<pre><code>ssh-agent zsh</code></pre>
+<ul>
+<li>for Bash the following into your <code>~/.bashrc</code></li>
+</ul>
+<pre><code>ssh-agent bash</code></pre>
+<ol start="2" type="1">
+<li>issue the following Command</li>
+</ol>
+<pre><code>ssh-add ~/.ssh/id_rsa</code></pre>
                 </div>
                 <!-- A -->
                 <div style="padding-bottom:2px;display:inline-block;width:420px;max-width:100%">

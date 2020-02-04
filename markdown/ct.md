@@ -9,4 +9,6 @@
 
 ## Truther / Conspiracy RSS Feeds
 
-<script src="//rss.bloople.net/?url=https%3A%2F%2Frss.tinfoil-hat.net%2Fi%2F%3Fa%3Drss%26get%3Dc_2%26user%3Dtinfoil-hat%26token%3Djs8CVkFsWePXU338KicyZmjsWwWYj9aEYiRmt%26hours%3D168&limit=6&showtitle=false&type=js"></script>
+<script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.conspiracydocumentaries.com%2Ffeed%2F&limit=5&showtitle=false&type=js"></script>
+<script src="//rss.bloople.net/?url=https%3A%2F%2Ftruthstreammedia.com%2Frss&limit=5&showtitle=false&type=js"></script>
+

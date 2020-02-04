@@ -26,8 +26,7 @@ x;border-bottom:1px solid #555">
             </div>
             <!-- Menu -->
             	<div class="floatdiv"><a title="to Startpage" href="../index.html" style="color:#fff;border:0px">Start</a></div>
-            	<div class="floatdiv"><a title="IT-Blog, References and Links" href="../cs/structure.html" style="color:#fff;border:0px">Computer Science</a></div>
-            	<div class="floatdiv"><a title="Public Hosting" href="../hosting/hosting.html" style="color:#fff;border:0px">Public Hosting</a></div>
+            	<div class="floatdiv"><a title="IT-Blog, References and Links" href="../cs/cs.html" style="color:#fff;border:0px">Computer Science</a></div>
             	<div class="floatdiv"><a title="Anonymity" href="../privacy/structure.html" style="color:#fff;border:0px">Anonymity</a></div>
             	<div class="floatdiv"><a title="Call of Duty" href="../hacktivism/structure.html" style="color:#fff;border:0px">Hacktivism</a></div>
             	<div class="floatdiv"><a title="Conspiracy Theories" href="../ct/ct.html" style="color:#fff;border:0px">Conspiracy Theories</a></div>
@@ -39,15 +38,38 @@ x;border-bottom:1px solid #555">
                 <!-- A -->
                         <div style="float:left;padding:0px 14px 7px 0px;max-width:640px;display:inline-block">
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1">                                                                                               </a>
-<a class="sourceLine" id="cb1-2" title="2">███████╗██████╗ ███████╗███████╗     █████╗ ███████╗███████╗ █████╗ ███╗   ██╗ ██████╗ ███████╗</a>
-<a class="sourceLine" id="cb1-3" title="3">██╔════╝██╔══██╗██╔════╝██╔════╝    ██╔══██╗██╔════╝██╔════╝██╔══██╗████╗  ██║██╔════╝ ██╔════╝</a>
-<a class="sourceLine" id="cb1-4" title="4">█████╗  ██████╔╝█████╗  █████╗      ███████║███████╗███████╗███████║██╔██╗ ██║██║  ███╗█████╗  </a>
-<a class="sourceLine" id="cb1-5" title="5">██╔══╝  ██╔══██╗██╔══╝  ██╔══╝      ██╔══██║╚════██║╚════██║██╔══██║██║╚██╗██║██║   ██║██╔══╝  </a>
-<a class="sourceLine" id="cb1-6" title="6">██║     ██║  ██║███████╗███████╗    ██║  ██║███████║███████║██║  ██║██║ ╚████║╚██████╔╝███████╗</a>
-<a class="sourceLine" id="cb1-7" title="7">╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝</a></code></pre></div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XGJGcEFGQCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<h3 id="xmpp-letsencrypt">XMPP Letsencrypt</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">pct</span> set 100 -mp0 /mnt/bindmounts/shared,mp=/shared</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="ex">certbot</span> certonly --webroot -w /var/www/ssl/xmpp --email mail@domain.tld -d xmpp.domain.tld -d conference.domain.tld -d pubsub.domain.tld -d upload.domain.tld -d domain.tld</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="ex">mountpoint</span> from /etc/letsencrypt/live and /etc/letsencrypt/archive to lxc container (see below)</span></code></pre></div>
+<h3 id="fix-locales-debian-10-lxc">Fix Locales Debian 10 LXC</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="bu">export</span> <span class="va">LANGUAGE=</span>en_US.UTF-8</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="bu">export</span> <span class="va">LANG=</span>en_US.UTF-8</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="bu">export</span> <span class="va">LC_ALL=</span>en_US.UTF-8</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="ex">locale-gen</span> en_US.UTF-8</span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="ex">dpkg-reconfigure</span> locales</span></code></pre></div>
+<h3 id="docker-under-lxc">Docker under LXC</h3>
+<ul>
+<li>Use unprivileged container</li>
+<li>in Options set keyctl=1, nested=1</li>
+<li>systemctl edit containerd.service</li>
+<li>Paste the following:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a>[<span class="ex">Service</span>]   </span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="va">ExecStartPre=</span></span></code></pre></div>
+<h3 id="set-local-mountpoint">Set Local Mountpoint</h3>
+<p><code>pct set 100 -mp0 /etc/letsencrypt/live/..,mp=/etc/letsencrypt/live/...</code></p>
+<h3 id="img-to-proxmox-image-.qcow2">.img to proxmox image (.qcow2)</h3>
+<ul>
+<li>move disk as qcow2 to external Storage</li>
+<li>sshfs to storage</li>
+</ul>
+<p><code>qemu-img convert -f raw -O qcow2 image.img vm-104-disk.qcow2</code></p>
+<ul>
+<li>remove old qcow2 image</li>
+<li>remane new qcow2 to old imagename</li>
+<li>move disk to local storage</li>
+</ul>
                 </div>
                 <!-- A -->
                 <div style="padding-bottom:2px;display:inline-block;width:420px;max-width:100%">
@@ -60,12 +82,12 @@ x;border-bottom:1px solid #555">
             <!-- Footer -->
             <div style="clear:both;font-size:11px;background-color:#00004d;border-bottom-left-radius:5px;border-bottom-right-radius:5px;color:#fff;padding:3px 6px 3px 6px;border-top:1px solid #555">
                 <!-- Footer Content -->
-                <a href=https://keyserver.ubuntu.com/pks/lookup?search=privat%40nchristian.net&fingerprint=on&op=index>>GPG-Fingerprint: F1AB 723C 635B 792F E18A EED8 6259 5B76 EE31 15F2</a><span class="desktop-only"> ·</span><br class="mobile-only">
+                <a href=https://keyserver.ubuntu.com/pks/lookup?search=privat%40nchristian.net&fingerprint=on&op=index>GPG-Fingerprint: F1AB 723C 635B 792F E18A EED8 6259 5B76 EE31 15F2</a><span class="desktop-only"> ·</span><br class="mobile-only">
                 <span class="desktop-only"></span><br class="mobile-only">
-                <a target="_blank" href="https://git.tinfoil-hat.net" style="color:#fff" rel="nofollow">Git Repo</a> ·</span><br class="mobile-only">
-                <a href="irc://irc.uugrn.org:6668/uugrn" style="color:#fff" rel="nofollow">IRC #uugrn tinfoil_hat</a> ·</span><br class="mobile-only">
+                <a target="_blank" href="https://git.tinfoil-hat.net/tinfoil-hat" style="color:#fff" rel="nofollow">Git Repo</a> ·</span><br class="mobile-only">
+                <a href="irc://irc.uugrn.org:6668/uugrn" style="color:#fff" rel="nofollow">IRC #uugrn tinfoil-hat</a> ·</span><br class="mobile-only">
                 <a style="color:#fff" rel="nofollow">chrissly90@jabber.nchristian.net</a> ·</span><br class="mobile-only">
-                Mail:&nbsp;<span title="Do you have any questions or complains? E-Mail me!"><a href="mailto:privat@nchristian.net" style="color:#fff">privat@nchristian.net</a></span><span class="desktop-only"> ·</span><br class="mobile-only">
+                Mail:&nbsp;<span title="Do you have any questions or complains? E-Mail me!"><a href="mailto:mail@tinfoil-hat.net" style="color:#fff">mail@tinfoil-hat.net</a></span><span class="desktop-only"> ·</span><br class="mobile-only">
                 <a href="legal.html" rel="nofollow">Legal</a> 
             </div>
             <!-- End Footer -->

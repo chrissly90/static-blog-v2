@@ -29,3 +29,5 @@ Alternatively to the two plugins there is a script for the [Greasemonkey](https:
 ## WordPress Embed
 
 Of course, the videos can also be embedded in WordPress articles. All you have to do is [activate](https://gist.github.com/ngm/868e7ae1617fd41a185eddc4599681f0) the embeds.
+
+**Update: I recommend [Invidition](https://addons.mozilla.org/de/firefox/addon/invidition/) now, because it redirects both (twitter and youtube)**

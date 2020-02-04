@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel=stylesheet type="text/css" href="../css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta NAME="language" CONTENT="en">
+        <meta name="keywords" content="tinfoilhat, tinfoil-hat, Conspiracy Theories, Linux, Opensource, IT, computer science, Unix, vlog, [★]">
+        <meta name="description" content="IT-Blog: Tinfoil-hat.net, tinfoilhat, tinfoil-hat, Conspiracy Theories, Linux, Opensource, IT, computer science, Unix, vlog, [★]">
+        <meta http-equiv="Content-Language" content="en">
+        <meta http-equiv="imagetoolbar" content="no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="author" content="tinfoil_hat">
+        <title>Tinfoil-hat.net - A secure home for every tinfoil-hat.</title> 
+    </head>
+    <body>
+        <!-- Border around content -->
+        <div style="border:2px solid #555;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;background-color:#000;box-s
+hadow:3px 3px 5px rgba(0,0,0,0.5)">
+            <!-- Headline -->
+            <div style="text-shadow:1px 0px 0px #444;letter-spacing:0.28px;border-top-left-radius:10px;border-top-right-radius:10px;color:#fff;background-color:#111;padding:3px 6px 3px 6p
+x;border-bottom:1px solid #555">
+                 <!-- Headline Mobile -->
+                 <div class="mobile-only"><b class="c-fff">Tinfoil-hat.net</b><br>A secure home for every tinfoil-hat</div>
+                 <!-- Headline Desktop -->
+                 <div class="desktop-only"><b class="c-fff">:: Tinfoil-hat.net - A secure home for every tinfoil-hat</b></div>
+            </div>
+            <!-- Menu -->
+            	<div class="floatdiv"><a title="to Startpage" href="../index.html" style="color:#fff;border:0px">Start</a></div>
+            	<div class="floatdiv"><a title="IT-Blog, References and Links" href="../cs/cs.html" style="color:#fff;border:0px">Computer Science</a></div>
+            	<div class="floatdiv"><a title="Anonymity" href="../privacy/structure.html" style="color:#fff;border:0px">Anonymity</a></div>
+            	<div class="floatdiv"><a title="Call of Duty" href="../hacktivism/structure.html" style="color:#fff;border:0px">Hacktivism</a></div>
+            	<div class="floatdiv"><a title="Conspiracy Theories" href="../ct/ct.html" style="color:#fff;border:0px">Conspiracy Theories</a></div>
+            	<div class="floatdiv"><a title="Posts Overview" href="../posts/structure.html" style="color:#fff;border:0px">Posts Overview</a></div>
+
+			<!-- Beginning Content -->
+            <div style="padding:4px 7px 4px 7px;background-color:#000;clear:both">
+            
+                <!-- A -->
+                        <div style="float:left;padding:0px 14px 7px 0px;max-width:640px;display:inline-block">
+
+<h1 id="wget-commandline-fu">Wget Commandline FU</h1>
+<h3 id="clone-entire-websites">Clone entire Websites:</h3>
+<p><code>wget -mkEpnp --convert-links --adjust-extension</code></p>
+<h3 id="wget-only-mp3s">wget only MP3’s:</h3>
+<p><code>wget -e robots=off --no-parent -r --accept '*.mp3'</code></p>
+<h3 id="wget-via-tor">wget via TOR:</h3>
+<p><code>torsocks wget</code></p>
+<h3 id="you-can-find-easily-opendirectories-on">You can find easily Opendirectories on:</h3>
+<p><a href="https://www.reddit.com/r/opendirectories/">Reddit</a></p>
+<p><a href="https://lumpysoft.com/">lumpysoft.com</a></p>
+<p><a href="http://palined.com/search/">http://palined.com/search/</a></p>
+<h3 id="i-wrote-a-bashscript-for-downloading-opendirectories">I wrote a bashscript for downloading Opendirectories:</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># wmirror &lt;URL&gt; &lt;local-directory-name&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co">#</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co"># This script is useful for downloading specific file types off of the net.</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co">#</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co"># The following are the base arguments we will be providing to wget.</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#   Yes, all of this could be put in a config file.  For the time being</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">#   I want them here.</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="co">#</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co"># --reject &quot;index.html*&quot;   get rid of the index trash</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="co"># --cut-dirs 5</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="co"># -r                       recursive</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="co"># -l inf                   all sub directories</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="co"># -np                      do NOT crawl parent directories</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="co"># -nH                      do NOT create host directories locally</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="co"># -k                       convert links (to refer to local directories)</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="co"># -c                       continue (script is restartable)</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="co"># -N                       only retrieve files when newer than local file</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="co"># -w1                      wait interval is 1 second</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="co"># --random-wait            random wait between 0..2 seconds (2 * wait interval)</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="co"># --e robots=off           ignore robots.txt (naughty)</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="co">## --no-check-certificate   live dangerously</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a><span class="co"># -a $2.log                append to the log file</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a> </span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="va">LOGDIR=$BASEDIR</span>/Logs</span>
+<span id="cb1-27"><a href="#cb1-27"></a><span class="va">URL=$1</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="va">DIR=$2</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a> </span>
+<span id="cb1-30"><a href="#cb1-30"></a><span class="kw">if</span><span class="bu"> [</span> <span class="ot">!</span> <span class="ot">-d</span> <span class="va">$DIR</span><span class="bu"> ]</span></span>
+<span id="cb1-31"><a href="#cb1-31"></a><span class="kw">then</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a>    <span class="bu">echo</span> mkdir -p <span class="va">$DIR</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a>    <span class="fu">mkdir</span> -p <span class="va">$DIR</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="kw">fi</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a> </span>
+<span id="cb1-36"><a href="#cb1-36"></a><span class="bu">cd</span> <span class="va">$DIR</span></span>
+<span id="cb1-37"><a href="#cb1-37"></a><span class="fu">wget</span> -r -l inf -np -nH -k -c -N -w1 -e robots=off --random-wait --reject <span class="st">&quot;index.html*&quot;</span> <span class="va">$URL</span></span></code></pre></div>
+                </div>
+                <!-- A -->
+                <div style="padding-bottom:2px;display:inline-block;width:420px;max-width:100%">
+                    <div style="clear:both"></div>
+                    <div style="font-size:6px"><br>
+                                </div>
+                
+            </div>
+            <!-- End Content -->
+            <!-- Footer -->
+            <div style="clear:both;font-size:11px;background-color:#00004d;border-bottom-left-radius:5px;border-bottom-right-radius:5px;color:#fff;padding:3px 6px 3px 6px;border-top:1px solid #555">
+                <!-- Footer Content -->
+                <a href=https://keyserver.ubuntu.com/pks/lookup?search=privat%40nchristian.net&fingerprint=on&op=index>GPG-Fingerprint: F1AB 723C 635B 792F E18A EED8 6259 5B76 EE31 15F2</a><span class="desktop-only"> ·</span><br class="mobile-only">
+                <span class="desktop-only"></span><br class="mobile-only">
+                <a target="_blank" href="https://git.tinfoil-hat.net/tinfoil-hat" style="color:#fff" rel="nofollow">Git Repo</a> ·</span><br class="mobile-only">
+                <a href="irc://irc.uugrn.org:6668/uugrn" style="color:#fff" rel="nofollow">IRC #uugrn tinfoil-hat</a> ·</span><br class="mobile-only">
+                <a style="color:#fff" rel="nofollow">chrissly90@jabber.nchristian.net</a> ·</span><br class="mobile-only">
+                Mail:&nbsp;<span title="Do you have any questions or complains? E-Mail me!"><a href="mailto:mail@tinfoil-hat.net" style="color:#fff">mail@tinfoil-hat.net</a></span><span class="desktop-only"> ·</span><br class="mobile-only">
+                <a href="legal.html" rel="nofollow">Legal</a> 
+            </div>
+            <!-- End Footer -->
+            
+        <!-- End Border around content -->
+        </div>
+    </body>
+</html>
+
