@@ -1,23 +1,8 @@
 # summary
 
-- [NAS-decrypt.sh](NAS-decrypt.sh.html)
-- [backup.sh](backup.html)
-- [create-ssh-key](create-ssh-key.html)
-- [proxmox-workarounds-and-fixes](proxmox-workarounds-and-fixes.html)
-- [weechat](weechat.html)
-- [wget](wget.html)
-- [youtube-dl](youtube-dl.html)
-- [NAS-decrypt.sh](NAS-decrypt.html)
-- [The Founder of Fossil Forum - on Github](fossil-forum-founder-on-Github.html)
-- [Full-Stack-Developer-vs-Full-Stack-Human](full-stack-developer-vs-full-stack-human.html)
-- [Some Coding Spotity Playlist](coding-music.html)
-- [Tinfoil-Chat](tinfoil-chat.html)
-- [Proxmox Exposed Host](proxmox-exposed-host.html)
-- [Managing Dofiles with git](git-dotfiles.html)
-- [every-computer-is-backdoored](every-computer-is-backdoored.html)
-- [windows10-spies-on-you](windows10-spies-on-you.html)
-- [how-to-become-a-linux-admin](how-to-become-a-linux-admin)
+<pre>
 
+</pre>
 
 ## Computer Science RSS Feed 
 
@@ -25,11 +10,11 @@
 
 ## Security Alerts RSS Feed
 
-<script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.bsi.bund.de%2FSiteGlobals%2FFunctions%2FRSSFeed%2FRSSNewsfeed%2FRSSNewsfeed_WID.xml%3Bjsessionid%3D6DB492AFFEAC0A6FA4708EAA6705FDC2.1_cid360&limit=10&showtitle=false&type=js"></script>
+<script src="//rss.bloople.net/?url=https%3A%2F%2Fnvd.nist.gov%2Ffeeds%2Fxml%2Fcve%2Fmisc%2Fnvd-rss-analyzed.xml&limit=5&showtitle=false&type=js"></script>
 
 ## xkcd - latest comics
 
-<script src="//rss.bloople.net/?url=https%3A%2F%2Fxkcd.com%2Frss.xml&limit=3&type=js"></script>
+<script src="//rss.bloople.net/?url=https%3A%2F%2Fxkcd.com%2Frss.xml&limit=1&type=js"></script>
 
 ## Linklist
 

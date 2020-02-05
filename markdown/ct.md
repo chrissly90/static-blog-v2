@@ -1,11 +1,8 @@
 ## Summary
 
-- [How-the-Media-Controls-you](how-the-media-controls-you.html)
-- [The Venus Project and Zeitgeist the Movie](zeitgeist.html)
-- [How to Spot Clowns](how-to-spot-clowns.html)
-- [Qanon](qanon.html)
-- [Full Featured 'Conspiracy' Documentaries](full-featured-conspiracy-documentaries.html)
-- [Hollywood knew about 9-11](hollywood-knew.md)
+<pre>
+
+</pre>
 
 ## Truther / Conspiracy RSS Feeds
 

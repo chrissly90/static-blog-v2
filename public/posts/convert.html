@@ -39,7 +39,7 @@ x;border-bottom:1px solid #555">
                         <div style="float:left;padding:0px 14px 7px 0px;max-width:640px;display:inline-block">
 
 <p>#!/bin/bash</p>
-<p>if [[ $# -eq 0 ]] ; then echo “Usage: <inputfile> <newfilename>”; echo “or: <inputfile> <newfilename> <category>”; echo “possible categories:” echo “$(ls –color public/ | grep -v style.css |grep -v index.html)”; exit 0; fi</p>
+<p>if [[ $# -eq 0 ]] ; then echo “Usage: <inputfile> <newfilename>”; echo “or: <inputfile> <newfilename> <category>”; echo “possible categories:” echo “$(ls –color ../public/ | grep -v ../public/css/style.css |grep -v ../public/index.html)”; exit 0; fi</p>
 <p>pandoc –to=html –from=markdown -o ../tmp/tmp.html “$1”; cat ../src/header.html ../tmp/tmp.html ../src/footer.html &gt; ../public/posts/$2;</p>
 <p>if [ “$#” -ne 3 ] then echo “file public/posts/$2 successfully created”; else mv ../public/posts/$2 ../public/$3/$2; echo “successfully created time public/$3/$2”;</p>
 <p>fi</p>
